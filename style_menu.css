@@ -1,0 +1,56 @@
+nav.toonMenu header ul button img {
+	content:url(https://assets.codepen.io/274456/ui-icon-cross.svg);
+}
+
+nav li:hover {
+    text-decoration: underline;
+}
+
+header nav {
+	position:fixed;
+  	left:0;
+  	right:0;
+  	top:0;
+  	bottom:0;
+	translate:100% 0%;
+	transition:translate .3s;
+	background-color: var(--color-background);
+}
+
+header nav button {
+	background: transparent;
+	position: absolute;
+	right: 1em;
+	top: 1em;
+	display: flex;
+	border: none;
+	width: 3em;
+	
+}
+
+
+header nav ul {
+	display: flex;
+	flex-direction: column;
+	padding-left: 2em;
+	padding-top: 6em;
+	gap: 1.5em;
+}
+
+nav.toonMenu{
+	translate: 0% 0%;
+	z-index: 99;
+}
+
+
+header ul li button{
+	position:relative;
+	border: none;
+	background-color: transparent;
+}
+
+header ul li button img{
+	width: 1.2em;
+	filter: invert(1);
+
+}
